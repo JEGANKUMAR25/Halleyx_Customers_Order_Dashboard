@@ -2,89 +2,18 @@
 
 A modern, full-stack MERN (MongoDB, Express, React, Node.js) application designed for managing customer orders and providing deep analytics through interactive widgets and AI-powered insights.
 
-## Features
+## Functions
 
 - **Customer & Order Management**: Comprehensive CRUD operations for managing customer orders efficiently.
 - **KPI Widget System**: A dynamic, modular widget system including configurable pie charts, table widgets, and summary cards.
-- **Interactive UI**: Clean, modern interface supporting drag-and-drop (using `@hello-pangea/dnd`) for customizable dashboard layouts.
-- **Data Visualization**: Real-time rendering of complex charts using `recharts` for an intuitive analytics experience.
-- **AI-Powered Insights**: An integrated Insights Chatbot and data analysis engine powered by OpenAI, offering helpful conclusions (includes a robust fallback mechanism if the API key is not configured).
+- **Interactive UI**: Clean, modern interface supporting drag-and-drop for customizable dashboard layouts.
+- **Data Visualization**: Real-time rendering of complex charts for an intuitive analytics experience.
+- **AI-Powered Insights**: An integrated Insights Chatbot and data analysis engine, offering helpful conclusions.
 
-## Tech Stack
+## Structure
 
-**Frontend (`/client`)**
-- React 19 (via Vite)
-- Tailwind CSS & Framer Motion for responsive, beautiful styling and micro-animations
-- Recharts for data visualizations
-- Lucide React for consistent iconography
-- `@hello-pangea/dnd` for drag-and-drop dashboard capabilities
-- Axios for API requests
-
-**Backend (`/server`)**
-- Node.js & Express.js for the REST API
-- MongoDB & Mongoose for robust data modeling and persistence
-- OpenAI API for generating AI insights based on order data
-- dotenv for environment variable management
-- cors enabled cross-origin resource sharing
-
-## Getting Started
-
-Follow these instructions to set up the project locally.
-
-### Prerequisites
-
-- Node.js (v18 or higher recommended)
-- MongoDB running locally or a MongoDB Atlas URI
-- (Optional) OpenAI API Key for full AI Insights functionality
-
-### Installation
-
-1. **Clone the repository** (if you haven't already):
-   ```bash
-   git clone <your-github-repo-url>
-   cd <project-folder-name>
-   ```
-
-2. **Install Server Dependencies:**
-   ```bash
-   cd server
-   npm install
-   ```
-
-3. **Install Client Dependencies:**
-   ```bash
-   cd ../client
-   npm install
-   ```
-
-### Configuration
-
-Create a `.env` file in the `server` directory and add the following variables:
-
-```env
-PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-OPENAI_API_KEY=your_openai_api_key_here
 ```
-
-### Running the Application
-
-1. **Start the Backend Server (from the `server` directory):**
-   ```bash
-   npm run dev
-   ```
-   *The server will typically start on `http://localhost:5000`.*
-
-2. **Start the Frontend Client (from the `client` directory):**
-   ```bash
-   npm run dev
-   ```
-   *The client will be available on `http://localhost:5173`.*
-
-## Project Structure
-
-```text
-├── client/                 # React Frontend (Vite)
+├── client/                 # React Frontend
 │   ├── src/
 │   │   ├── components/     # Reusable UI components and Widgets
 │   │   ├── hooks/          # Custom React hooks
@@ -101,15 +30,8 @@ OPENAI_API_KEY=your_openai_api_key_here
 └── README.md
 ```
 
-## Contributing
+## Others
 
-1. Fork the project.
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
+- **Customizability**: The dashboard is highly modular and supports easy addition of new widget types.
+- **AI Fallback**: Built-in mock data generation ensures the insights engine continues working without an active API key.
+- **Performance**: Optimized rendering and API call patterns for a smooth user experience.
