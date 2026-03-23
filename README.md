@@ -13,6 +13,7 @@ A modern, full-stack MERN (MongoDB, Express, React, Node.js) application designe
 ## Project Demo Video
 
 - Google Drive Link: https://drive.google.com/file/d/1qChD17ZG-5vUsCmAWXkXs3b-YQo9amzD/view?usp=sharing
+- Watch on Youtube: https://youtu.be/hekiFfUHu-8
 
 ## Structure
 
