@@ -10,6 +10,10 @@ A modern, full-stack MERN (MongoDB, Express, React, Node.js) application designe
 - **Data Visualization**: Real-time rendering of complex charts for an intuitive analytics experience.
 - **AI-Powered Insights**: An integrated Insights Chatbot and data analysis engine, offering helpful conclusions.
 
+## Project Demo Video
+
+- Google Drive Link: https://drive.google.com/file/d/1qChD17ZG-5vUsCmAWXkXs3b-YQo9amzD/view?usp=sharing
+
 ## Structure
 
 ```
